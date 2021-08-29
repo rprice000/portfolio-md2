@@ -65,12 +65,16 @@ section h2 {
     text-align: center;
 }
 
+.hero img {
+    border-radius: 25%;
+}
+
 /* HERO SECTION STYLING END */
 
 /* FOR ALL SECTIONS STYLING START */
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,13 +88,20 @@ section div {
 
 /* FOR ALL SECTIONS STYLING END */
 
-.about, .contact {
+
+/* ABOUT SECTION STYLING START */
+
+.about {
     background-color: var(--primary-color);
 }
 
+/* ABOUT SECTION STYLING END */
+
+/* PORTFOLIO SECTION STYLING START */
+
 .portfolio {
     background-color: var(--secondary-color);
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .items {
@@ -100,10 +111,49 @@ section div {
 
 .portfolio-item {
     border: 2px solid black;
-    
+    border-radius: 15%;
+    width: 25%;
 }
 
+/* PORTFOLIO SECTION STYLING END */
 
+/* CONTACT SECTION STYLING START */
+
+.contact {
+    background-color: var(--primary-color);
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba( 255, 255, 255, 0.75);
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+  }
+  
+  .contact-form button {
+    width: 50%;
+    border: none;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+/* CONTACT SECTION STYLING END */
 
 
 
