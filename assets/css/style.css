@@ -84,6 +84,7 @@ section div {
     padding: 50px 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* FOR ALL SECTIONS STYLING END */
@@ -93,6 +94,10 @@ section div {
 
 .about {
     background-color: var(--primary-color);
+}
+
+.about article {
+    width: 33%;
 }
 
 /* ABOUT SECTION STYLING END */
@@ -167,4 +172,66 @@ footer {
 }
 
 /* FOOTER STYLING END */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 900px) {
+    
+    /* HEADER STYLING START */
+    header {
+        flex-wrap: wrap;
+    }
+    /* HEADER STYLING END */
+
+    /* ABOUT STYLING START */
+    .about div {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .about article:first-child {
+        padding-bottom: 30px;
+    
+    }
+    /* ABOUT STYLING END */
+
+    /* PORTFOLIO STYLING START */
+
+    .items {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolio-item {
+        width: 55%;
+        margin: 20px;
+    }
+
+   /* PORTFOLIO STYLING END */
+
+   /* CONTACT STYLING START */
+
+   .contact {
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       
+   }
+
+   /* CONTACT STYLING END */
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+  
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER  */
+  @media screen and (max-width: 757px) {
+    
+  }
 
