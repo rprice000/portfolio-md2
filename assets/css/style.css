@@ -141,6 +141,16 @@ section h2 {
     text-decoration: none;
 }
 
+a div {
+    background-color: var(--primary-color);
+    color: var(--white-text);
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .portfolio-item:hover {
     opacity: 1;
 }
