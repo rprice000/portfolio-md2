@@ -25,7 +25,6 @@ main a {
 }
 
 /* HEADER STYLING START */
-
 header {
     padding: 20px 35px 10px 35px;
     background-color: var(--second-color);
@@ -50,11 +49,10 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
   }
-
 /* HEADER STYLING END */
 
-/* HERO SECTION STYLING START */
 
+/* HERO SECTION STYLING START */
 .hero {
     padding: 175px 0px;
     background-image: url("../images/hero-image.jpg");
@@ -74,11 +72,10 @@ header nav ul li a {
     text-align: center;
     text-shadow: 2px 2px var(--fifth-color);
 }
-
 /* HERO SECTION STYLING END */
 
-/* FOR ALL SECTIONS STYLING START */
 
+/* FOR ALL SECTIONS STYLING START */
 section {
     padding: 50px 0;
     display: flex;
@@ -100,12 +97,10 @@ section div {
     flex-direction: row;
     justify-content: space-around;
 }
-
 /* FOR ALL SECTIONS STYLING END */
 
 
 /* ABOUT SECTION STYLING START */
-
 .about {
     background-color: var(--first-color);
 }
@@ -126,11 +121,10 @@ section div {
     width: 20%;
     height: 250px;
 }
-
 /* ABOUT SECTION STYLING END */
 
-/* PORTFOLIO SECTION STYLING START */
 
+/* PORTFOLIO SECTION STYLING START */
 .portfolio {
     background-color: var(--third-color);
 }
@@ -179,11 +173,10 @@ section div {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 /* PORTFOLIO SECTION STYLING END */
 
-/* CONTACT SECTION STYLING START */
 
+/* CONTACT SECTION STYLING START */
 .contact {
     background-color: var(--first-color);
 }
@@ -222,24 +215,20 @@ section div {
 /* CONTACT SECTION STYLING END */
 
 
-
 /* FOOTER STYLING START */
-
 footer {
     padding: 20px 35px;
     background-color: var(--second-color);
     text-align: center;
 }
-
 /* FOOTER STYLING END */
-
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 900px) {
-    
-    /* HEADER STYLING START */
+
+/* HEADER STYLING START */
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -248,9 +237,9 @@ footer {
     header nav {
         padding-top: 20px;
     }
-    /* HEADER STYLING END */
+/* HEADER STYLING END */
 
-    /* ABOUT STYLING START */
+/* ABOUT STYLING START */
     .about div {
         flex-direction: column;
         align-items: center;
@@ -265,9 +254,9 @@ footer {
         width: 70%;
         height: 350px;
     }
-    /* ABOUT STYLING END */
+/* ABOUT STYLING END */
 
-    /* PORTFOLIO STYLING START */
+/* PORTFOLIO STYLING START */
     .items {
         flex-direction: column;
         align-items: center;
@@ -281,9 +270,9 @@ footer {
     .items a div {
         padding: 25px 0;
     }
-   /* PORTFOLIO STYLING END */
+/* PORTFOLIO STYLING END */
 
-   /* CONTACT STYLING START */
+/* CONTACT STYLING START */
    .contact div {
        flex-direction: column;
        align-items: center;
@@ -293,5 +282,5 @@ footer {
    .contact div > * {
        margin: 20px 0;
    }
-   /* CONTACT STYLING END */
+/* CONTACT STYLING END */
 }
