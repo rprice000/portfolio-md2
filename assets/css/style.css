@@ -271,6 +271,10 @@ footer {
         margin: 20px;
         width: 50%
     }
+
+    .items a div {
+        padding: 25px 0;
+    }
    /* PORTFOLIO STYLING END */
 
    /* CONTACT STYLING START */
