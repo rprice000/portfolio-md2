@@ -9,16 +9,18 @@
     --secondary-color: #98878f ;
     --tertiary-color: #98536d;
     --quaternary-color: #192231;
-    --fifth-color: #08bdeb;
-    --sixth-color: #030c8b;
+    --fifth-color: #576ca5;
+    --sixth-color: #180470;
     --seventh-color: #9d85c5;
     --white-text: rgba(244, 245, 239, 0.788);
+    --font-style1: Andale Mono, monospace;
 }
 
 
 main {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-style1);
 }
 
 /* HEADER STYLING START */
@@ -60,11 +62,10 @@ header nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image:url(./assets/images/hero-image.jpg);
 }
 
-.hero img {
-    border-radius: 25%;
-}
+
 
 /* HERO SECTION STYLING END */
 
@@ -98,6 +99,7 @@ section h2 {
 
 .about {
     background-color: var(--primary-color);
+    
 }
 
 .about div {
@@ -106,13 +108,30 @@ section h2 {
     justify-content: space-around;
 }
 
-.about article {
-    width: 33%;
+.about div p {
+    width: 50%;
+    line-height: 30px;
+    text-indent: 50px;
+
 }
 
 .about h3 {
     padding-bottom: 10px;
 }
+
+.about img {
+    border-radius: 25%;
+    border: 10px solid black;
+    width: 20%;
+    height: 250px;
+}
+
+
+/* .about div a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--white-text);
+} */
 
 /* ABOUT SECTION STYLING END */
 
@@ -141,7 +160,7 @@ section h2 {
     text-decoration: none;
 }
 
-a div {
+.portfolio a div {
     background-color: var(--primary-color);
     color: var(--white-text);
     width: 50%;
@@ -153,10 +172,12 @@ a div {
 
 .portfolio-item:hover {
     opacity: 1;
+    width: 35%;
+    height: 250px;
 }
 
 #run-buddy {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/run-buddy-pic.JPG");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -250,6 +271,11 @@ footer {
         padding-bottom: 30px;
     
     }
+
+    .about div article {
+        width: 70%;
+    }
+
     /* ABOUT STYLING END */
 
     /* PORTFOLIO STYLING START */
@@ -260,6 +286,7 @@ footer {
 
     .items a {
         margin: 20px;
+        width: 50%
     }
  
    /* PORTFOLIO STYLING END */
