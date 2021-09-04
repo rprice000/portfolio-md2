@@ -175,8 +175,8 @@ section div {
 
 #future-project {
     background-image: url("../images/under-construction.JPG");
-    background-size: contain;
-    /* background-color: white; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* PORTFOLIO SECTION STYLING END */
@@ -251,7 +251,7 @@ footer {
     }
 
     .about div p {
-        width: 70%;
+        width: 85%;
         padding-top: 50px;
     }
 
@@ -277,6 +277,7 @@ footer {
    .contact div {
        flex-direction: column;
        align-items: center;
+       justify-content: center;
    }
 
    .contact div > * {
