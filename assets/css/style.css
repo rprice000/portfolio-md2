@@ -241,6 +241,11 @@ footer {
     /* HEADER STYLING START */
     header {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        padding-top: 20px;
     }
     /* HEADER STYLING END */
 
