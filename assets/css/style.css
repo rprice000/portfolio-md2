@@ -5,29 +5,29 @@
 }
 
 :root {
-    --primary-color: #494e6b;
-    --secondary-color: #98878f ;
-    --tertiary-color: #98536d;
-    --quaternary-color: #192231;
-    --fifth-color: #576ca5;
-    --sixth-color: #180470;
-    --seventh-color: #9d85c5;
-    --white-text: rgba(244, 245, 239, 0.788);
+    --first-color: #494e6b;
+    --second-color: #192231;
+    --third-color: #576ca5;
+    --fourth-color: rgba(255, 255, 255);
     --font-style1: Andale Mono, monospace;
 }
-
 
 main {
     display: flex;
     flex-direction: column;
     font-family: var(--font-style1);
+    color: var(--fourth-color);
+}
+
+main a {
+    color: var(--fourth-color);
 }
 
 /* HEADER STYLING START */
 
 header {
     padding: 20px 35px;
-    background-color: var(--quaternary-color);
+    background-color: var(--second-color);
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -38,9 +38,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: var(--white-text);
 }
-
 
 header nav ul {
     list-style: none;
@@ -56,16 +54,24 @@ header nav ul li a {
 /* HERO SECTION STYLING START */
 
 .hero {
-    padding: 100px 0;
+    padding: 200px 0;
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-image:url(./assets/images/hero-image.jpg);
+    justify-content: center;
 }
 
+.hero div {
+    width: 40%;
+}
 
+.hero div h1 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
 
 /* HERO SECTION STYLING END */
 
@@ -80,16 +86,17 @@ section {
 
 section h2 {
     text-align: center;
+    text-shadow: 2px 2px black;
 }
-
-/*section div {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}*/
 
 section h2 {
     padding-bottom: 30px;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* FOR ALL SECTIONS STYLING END */
@@ -98,21 +105,13 @@ section h2 {
 /* ABOUT SECTION STYLING START */
 
 .about {
-    background-color: var(--primary-color);
-    
-}
-
-.about div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: var(--first-color);
 }
 
 .about div p {
     width: 50%;
     line-height: 30px;
     text-indent: 50px;
-
 }
 
 .about h3 {
@@ -121,34 +120,21 @@ section h2 {
 
 .about img {
     border-radius: 25%;
-    border: 10px solid black;
+    border: 5px solid black;
     width: 20%;
     height: 250px;
 }
-
-
-/* .about div a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: var(--white-text);
-} */
 
 /* ABOUT SECTION STYLING END */
 
 /* PORTFOLIO SECTION STYLING START */
 
 .portfolio {
-    background-color: var(--secondary-color);
-    display: flex;
-}
-
-.items {
-    display: flex;
-    justify-content: space-around;
+    background-color: var(--third-color);
 }
 
 .portfolio-item {
-    border: 2px solid black;
+    border: 5px solid black;
     border-radius: 25%;
     opacity: .3;
     width: 27%;
@@ -161,8 +147,7 @@ section h2 {
 }
 
 .portfolio a div {
-    background-color: var(--primary-color);
-    color: var(--white-text);
+    background-color: var(--first-color);
     width: 50%;
     height: 30px;
     display: flex;
@@ -187,49 +172,44 @@ section h2 {
     background-size: contain;
 }
 
+#future-project {
+    background-color: white;
+}
+
 /* PORTFOLIO SECTION STYLING END */
 
 /* CONTACT SECTION STYLING START */
 
 .contact {
-    background-color: var(--primary-color);
-}
-
-.contact div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: var(--first-color);
 }
 
 .contact ul {
     list-style: none;
-}
-
-.contact a {
-    text-decoration: none;
+    line-height: 30px;
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
+    border: 3px solid black;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--secondary-color);
+    color: black;
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
-    background-color: rgba( 255, 255, 255, 0.75);
+    background-color: var(--fourth-color);
   }
   
   .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--fourth-color);
     outline: none;
   }
   
   .contact-form button {
     width: 50%;
-    border: none;
+    border: 3px solid black;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -243,12 +223,12 @@ section h2 {
 
 footer {
     padding: 20px 35px;
-    background-color: var(--quaternary-color);
-    color: var(--white-text);
+    background-color: var(--second-color);
     text-align: center;
 }
 
 /* FOOTER STYLING END */
+
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -267,15 +247,10 @@ footer {
         align-items: center;
     }
 
-    .about article:first-child {
-        padding-bottom: 30px;
-    
-    }
-
-    .about div article {
+    .about img {
         width: 70%;
+        height: 350px;
     }
-
     /* ABOUT STYLING END */
 
     /* PORTFOLIO STYLING START */
@@ -288,32 +263,16 @@ footer {
         margin: 20px;
         width: 50%
     }
- 
    /* PORTFOLIO STYLING END */
 
    /* CONTACT STYLING START */
-
    .contact div {
        flex-direction: column;
        align-items: center;
-
    }
 
    .contact div > * {
        margin: 20px 0;
    }
-
    /* CONTACT STYLING END */
-
-  }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-  
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER  */
-  @media screen and (max-width: 757px) {
-    
-  }
-
+}
