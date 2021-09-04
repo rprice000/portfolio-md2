@@ -9,6 +9,7 @@
     --second-color: #192231;
     --third-color: #576ca5;
     --fourth-color: rgba(255, 255, 255);
+    --fifth-color: rgb(0, 0, 0);
     --font-style1: Andale Mono, monospace;
 }
 
@@ -70,7 +71,7 @@ header nav ul li a {
 .hero div h1 {
     font-size: 50px;
     text-align: center;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px var(--fifth-color);
 }
 
 /* HERO SECTION STYLING END */
@@ -86,7 +87,7 @@ section {
 
 section h2 {
     text-align: center;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px var(--fifth-color);
 }
 
 section h2 {
@@ -120,7 +121,7 @@ section div {
 
 .about img {
     border-radius: 25%;
-    border: 5px solid black;
+    border: 5px solid var(--fifth-color);
     width: 20%;
     height: 250px;
 }
@@ -134,7 +135,7 @@ section div {
 }
 
 .portfolio-item {
-    border: 5px solid black;
+    border: 5px solid var(--fifth-color);
     border-radius: 25%;
     opacity: .3;
     width: 27%;
@@ -173,7 +174,9 @@ section div {
 }
 
 #future-project {
-    background-color: white;
+    background-image: url("../images/under-construction.JPG");
+    background-size: contain;
+    /* background-color: white; */
 }
 
 /* PORTFOLIO SECTION STYLING END */
@@ -190,11 +193,11 @@ section div {
 }
 
 .contact-form input, .contact-form textarea {
-    border: 3px solid black;
+    border: 3px solid var(--fifth-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: black;
+    color: var(--fifth-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -209,7 +212,7 @@ section div {
   
   .contact-form button {
     width: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--fifth-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -245,6 +248,11 @@ footer {
     .about div {
         flex-direction: column;
         align-items: center;
+    }
+
+    .about div p {
+        width: 70%;
+        padding-top: 50px;
     }
 
     .about img {
